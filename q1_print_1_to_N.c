@@ -24,8 +24,6 @@ int main() {
 
     print_1_to_N(n);
 
-
-
     return 0;
 
 
