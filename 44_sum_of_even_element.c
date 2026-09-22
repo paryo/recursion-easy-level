@@ -28,5 +28,8 @@ int main() {
 
     int size = sizeof(arr)/sizeof(arr[0]);
 
+    printf("%d",sum_of_even(arr,size));
+
+
     return 0;
 }
