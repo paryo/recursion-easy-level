@@ -22,7 +22,7 @@ int strict_increase(int arr[] , int idx , int size) {
 
 int main() {
 
-    int arr[] = {2,5,8,12,19};
+    int arr[] = {2,5    ,8,12,19};
 
     int size = sizeof(arr)/sizeof(arr[0]);
 
