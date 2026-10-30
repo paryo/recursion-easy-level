@@ -13,8 +13,7 @@ double harmonic_sum(int n) {
         return 0.0;
     }
 
-
-    return (1.0/n) + harmonic_sum(n-1);
+     return (1.0/n) + harmonic_sum(n-1);
 
 
 
