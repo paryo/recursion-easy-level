@@ -13,7 +13,8 @@ double geometric_sum(int n) {
         return 0.0;
     }
 
-    return (1.0/(1<<n)) + geometric_sum(n-1);
+    return (1.0/(1<<n)) +
+        geometric_sum(n-1);
 }
 
 int main() {
