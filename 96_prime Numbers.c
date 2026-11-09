@@ -4,49 +4,48 @@ int prime_count = 0;
 
 void prime_numbers(int arr[] , int size , int i) {
 
-    if (i>= size) {
+    if (i >= size) {
 
         return;
-
     }
 
     int n = arr[i];
 
-    if (n >1) {
+    int prime_number = 1;
 
-        int prime_number = 1;
+    if (n <=1) {
 
-        int j = 2;
+        prime_number = 0;
+    }
 
-        while (j < n) {
+    else {
+
+        for (int j =2 ; j*j <=   n ; j++) {
 
             if (n % j == 0) {
 
                 prime_number = 0;
+
+                break;
             }
 
-            j++;
-
 
         }
-
-        if (prime_number == 1) {
-
-            prime_count++;
-
-        }
-
-
     }
 
-    prime_numbers(arr, size, i + 1);
+    if (prime_number == 1) {
+
+        prime_count++;
+    }
+
+
+    prime_numbers(arr,size,i+1);
+
+
+
+
+
 }
-
-
-
-
-
-
 
 int main() {
 
@@ -56,7 +55,9 @@ int main() {
 
     prime_numbers(arr,size,0);
 
-    printf("%d",prime_count);
+
+    printf("%d", prime_count);
+
 
     return 0;
 }
