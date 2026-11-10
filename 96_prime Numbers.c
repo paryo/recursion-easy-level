@@ -20,7 +20,7 @@ void prime_numbers(int arr[] , int size , int i) {
 
     else {
 
-        for (int j =2 ; j*j <=   n ; j++) {
+        for (int j =2 ; j*j <= n ; j++) {
 
             if (n % j == 0) {
 
